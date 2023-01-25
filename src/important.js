@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Today() {
-  return <div>Today</div>
+function Important() {
+  return <div>import</div>
 }
 
-export default Today
+export default Important

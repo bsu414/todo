@@ -23,44 +23,44 @@ function Layout() {
               </Link>
             </li>
             <li className="list">
-              <a href="#">
+              <Link to="/important">
                 <span className="icon">
                   <ion-icon name="star-outline"></ion-icon>
                 </span>
                 <span className="title">중요</span>
-              </a>
+              </Link>
             </li>
             <li className="list">
-              <a href="#">
+              <Link to="/planned">
                 <span className="icon">
                   <ion-icon name="calendar-outline"></ion-icon>
                 </span>
                 <span className="title">계획된 일정</span>
-              </a>
+              </Link>
             </li>
             <li className="list">
-              <a href="#">
+              <Link to="/assigned_to_me">
                 <span className="icon">
                   <ion-icon name="person-outline"></ion-icon>
                 </span>
                 <span className="title">나에게 할당됨</span>
-              </a>
+              </Link>
             </li>
             <li className="list">
-              <a href="#">
+              <Link to="/flagged">
                 <span className="icon">
                   <ion-icon name="flag-outline"></ion-icon>
                 </span>
                 <span className="title">플래그가 지정된 전자 메일</span>
-              </a>
+              </Link>
             </li>
             <li className="list">
-              <a href="#">
+              <Link to="/inbox">
                 <span className="icon">
                   <ion-icon name="home-outline"></ion-icon>
                 </span>
                 <span className="title">작업</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
