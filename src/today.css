@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  border-left: 70px solid #e9ecef;
+}
+.container .Title {
+  font-size: 1.4em;
+  padding-bottom: 15px;
+}
+.container .base {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 1px rgba(104, 104, 104, 0.6274509804);
+  border-radius: 5px;
+  height: 70vh;
+}
+.container .base .baseAdd {
+  position: relative;
+  box-shadow: 1px 1px 4px 1px rgba(104, 104, 104, 0.6274509804);
+  height: 52px;
+  display: flex;
+  width: 80vw;
+  border-radius: 5px;
+}
+.container .base .baseAdd ion-icon {
+  position: relative;
+  padding: 5px 7px;
+  font-size: 40px;
+}
+.container .base .baseAdd .baseAddInput {
+  width: 80vw;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+}
+.container .base .baseAdd .baseAddInput:focus {
+  outline: none;
+}
+.container .base .baseAdd .baseAddInput::-moz-placeholder {
+  color: #1b52aa;
+}
+.container .base .baseAdd .baseAddInput:-ms-input-placeholder {
+  color: #1b52aa;
+}
+.container .base .baseAdd .baseAddInput::placeholder {
+  color: #1b52aa;
+}/*# sourceMappingURL=today.css.map */

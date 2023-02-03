@@ -1,8 +1,7 @@
 import React from 'react'
 import './App.css'
 import Layout from './layout'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Main from './main'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Today from './today'
 import Important from './important'
 import Planned from './planned'
@@ -14,7 +13,7 @@ function App() {
     <BrowserRouter>
       <Layout />
       <Routes>
-        <Route path={'/'} element={<Main />} />
+        <Route path={'/'} element={<Navigate replace to="/today" />} />
         <Route path={'/today'} element={<Today />} />
         <Route path={'/important'} element={<Important />} />
         <Route path={'/planned'} element={<Planned />} />
