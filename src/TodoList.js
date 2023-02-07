@@ -1,13 +1,19 @@
-/* eslint-disable react/react-in-jsx-scope */
+import React from 'react'
 import TodoItem from './TodoItem'
+import './Todo.css'
 
-const TodoList = ({ todo, onToggle, onDel }) => {
+const TodoList = ({ todos, onRemove, onToggle }) => {
   return (
-    <ul className="TodoList">
-      {todo.map((item) => (
-        <TodoItem key={item.id} item={item} onToggle={onToggle} onDel={onDel} />
+    <div className={'TodoList'}>
+      {todos.map((todo) => (
+        <TodoItem
+          todo={todo}
+          key={todo.id}
+          onRemove={onRemove}
+          onToggle={onToggle}
+        />
       ))}
-    </ul>
+    </div>
   )
 }
 

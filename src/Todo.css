@@ -1,0 +1,49 @@
+.TodoList {
+  min-height: auto;
+  max-height: 92.5%;
+}
+.TodoList::-webkit-scrollbar {
+  display: none;
+}
+
+.TodoItem {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.TodoItem:nth-child(even) {
+  background: #f8f9fa;
+}
+.TodoItem .checkbox {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.TodoItem .checkbox svg {
+  font-size: 1.5rem;
+}
+.TodoItem .checkbox .text {
+  margin-left: 0.5rem;
+  flex: 1;
+}
+.TodoItem .checkbox.checked svg {
+  color: #22b8cf;
+}
+.TodoItem .checkbox.checked .text {
+  color: #adb5bd;
+  text-decoration: line-through;
+}
+.TodoItem .remove {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  cursor: pointer;
+}
+.TodoItem .remove:hover {
+  color: #ff8787;
+}
+.TodoItem + .TodoItem {
+  border-top: 1px solid #dee2e6;
+}/*# sourceMappingURL=Todo.css.map */

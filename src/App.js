@@ -2,13 +2,13 @@ import React from 'react'
 import './App.css'
 import Layout from './layout'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import Today from './today'
+import Today from './today.tsx'
 import Important from './important'
 import Planned from './planned'
 import AssignedToMe from './assignToMe'
 import Flagged from './flagged'
 import Inbox from './inbox'
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Layout />

@@ -1,15 +1,26 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable prettier/prettier */
 import React from 'react'
-
-const TodoItem = ({ item, onToggle, onDel }) => {
-  const { id, text, check } = item
-
+import {
+  MdCheckBoxOutlineBlank,
+  MdCheckBox,
+  MdRemoveCircleOutline
+} from 'react-icons/md'
+import cn from 'classnames'
+import './Todo.css'
+const TodoItem = ({ todo, onRemove, onToggle }) => {
+  const { id, text, checked } = todo
   return (
-    <li className={check ? 'on' : ''}>
-      <span onClick={() => onToggle(id)}>&#10003;</span>
-      <em>{text}</em>
-      <button onClick={() => onDel(id)}>&#10799;</button>
-    </li>
+    <div className={'TodoItem'}>
+      <div className={cn('checkbox', { checked })} onClick={() => onToggle(id)}>
+        {checked ? <MdCheckBox/> : <MdCheckBoxOutlineBlank />}
+        <div className={'text'}>{text}</div>
+      </div>
+      <div className={'remove'} onClick={() => onRemove(id)}>
+        <MdRemoveCircleOutline />
+      </div>
+    </div>
   )
 }
 
-export default TodoItem
+export default React.memo(TodoItem)
