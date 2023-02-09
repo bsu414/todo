@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  border-left: 70px solid #e9ecef;
+  padding-left: 70px;
 }
 .container .Title {
   font-size: 1.4em;
@@ -35,9 +35,6 @@
   outline: none;
 }
 .container .base .baseAdd .baseAddInput::-moz-placeholder {
-  color: #1b52aa;
-}
-.container .base .baseAdd .baseAddInput:-ms-input-placeholder {
   color: #1b52aa;
 }
 .container .base .baseAdd .baseAddInput::placeholder {

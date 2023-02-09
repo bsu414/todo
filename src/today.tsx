@@ -40,6 +40,10 @@ const Today = () => {
     }
   ])
   const nextId = useRef(3)
+  const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newTodoTemp = { ...newTodo, [e.target.name]: e.target.value };
+    setNewTodo(newTodoTemp);
+  };
   const onInsert = useCallback(text => {
     const todo = {
       id: nextId.current,

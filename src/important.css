@@ -32,9 +32,6 @@
 .container .baseAdd .baseAddInput::-moz-placeholder {
   color: #1b52aa;
 }
-.container .baseAdd .baseAddInput:-ms-input-placeholder {
-  color: #1b52aa;
-}
 .container .baseAdd .baseAddInput::placeholder {
   color: #1b52aa;
 }/*# sourceMappingURL=important.css.map */
