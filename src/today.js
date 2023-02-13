@@ -3,7 +3,18 @@ import InputLayout from './InputLayout'
 import './todolayout.css'
 import TodoList from './TodoList'
 
-function Plan() {
+const Today = () => {
+  const day = () => {
+    const now = new Date()
+    const todayYear = now.getFullYear()
+    const todayMonth = now.getMonth() + 1
+    const todayDay = now.getDate()
+    const week = ['일', '월', '화', '수', '목', '금', '토']
+    const dayOfWeek = week[now.getDay()]
+    return (
+      todayYear + '.' + todayMonth + '.' + todayDay + ' (' + dayOfWeek + ')'
+    )
+  }
   const todosInStorage = localStorage.getItem('todos')
   const parsedTodos = todosInStorage ? JSON.parse(todosInStorage) : []
   const [todos, setTodos] = useState(parsedTodos)
@@ -34,8 +45,8 @@ function Plan() {
   return (
     <div className="container">
       <div className="Title">
-        <ion-icon name="calendar-outline"></ion-icon>
-        <span> 계획된 일정</span>
+        <span>{day().slice(0, 9)}</span>
+        <span>{day().slice(9, 13)}</span>
       </div>
       <div className="base">
         <InputLayout onInsert={onInsert} />
@@ -45,4 +56,4 @@ function Plan() {
   )
 }
 
-export default Plan
+export default Today

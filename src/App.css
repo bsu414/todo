@@ -27,6 +27,11 @@ header {
   transition: width 0.5s;
   z-index: 99;
 }
+@media all and (max-width: 920px) {
+  .navigation {
+    visibility: hidden;
+  }
+}
 .navigation:hover {
   width: 300px;
 }
@@ -94,7 +99,7 @@ header {
 .navigation ul li a .title {
   position: relative;
   display: block;
-  padding-left: 10px;
+  padding-left: 5px;
   height: 60px;
   line-height: 60px;
   white-space: nowrap;

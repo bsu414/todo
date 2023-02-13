@@ -1,4 +1,7 @@
 .container{
+  @media all and (max-width:920px) {
+    padding-left: 0px;
+  }
   position: relative;
   padding-left: 70px;
   .Title{
@@ -6,7 +9,6 @@
     padding-bottom: 15px;
   }
   .base{
-    
     background-color: #fff;
     box-shadow: 1px 1px 4px 1px #686868a0;
     border-radius: 5px;
